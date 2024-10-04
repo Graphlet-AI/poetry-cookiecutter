@@ -1,0 +1,59 @@
+[tool.poetry]
+name = "{{cookiecutter.project_slug}}"
+version = "0.0.1"
+description = "{{cookiecutter.project_description}}"
+authors = ["{{cookiecutter.author}} <{{cookiecutter.email}}>"]
+repository = "https://github.com/{{cookiecutter.author_github_handle}}/{{cookiecutter.project_name}}"
+license = "MIT"
+readme = "README.md"
+packages = [
+  {include = "{{cookiecutter.project_slug}}"}
+]
+
+[project]
+name = "{{cookiecutter.project_slug}}"
+version = "0.0.1"
+
+[tool.poetry.urls]
+"Blog Post" = "https://{{cookiecutter.blog_post_url}}"
+"Code Repository" = "https://github.com/{{cookiecutter.author_github_handle}}/{{cookiecutter.project_name}}"
+"Bug Tracker" = "https://github.com/{{cookiecutter.author_github_handle}}/{{cookiecutter.project_name}}/issues"
+
+[tool.poetry.dependencies]
+python = "^3.12.6"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
+flake8 = "^7.1.1"
+isort = "^5.13.2"
+mypy = "^1.11.2"
+pytest = "^8.3.3"
+ipython = "^8.28.0"
+pre-commit = "^3.8.0"
+nbdime = "^4.0.2"
+tomlcheck = "^0.2.3"
+typeguard = "^4.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+target-version = ["py312"]
+include = ["{{cookiecutter.project_slug}}", "tests"]
+
+[tool.isort]
+profile = "black"
+src_paths = ["{{cookiecutter.project_slug}}", "tests"]
+
+[tool.mypy]
+python_version = "3.12"
+mypy_path = ["{{cookiecutter.project_slug}}", "tests"]
+warn_return_any = true
+warn_unused_configs = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
