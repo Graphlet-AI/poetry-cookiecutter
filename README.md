@@ -10,6 +10,8 @@ To use this template, you need to have CookieCutter installed. If you don't have
 pip install cookiecutter
 ```
 
+Now fill out the values for [`cookiecutter.json`](cookiecutter.json) in this repository.
+
 Then, you can create a new project using this template by running:
 
 ```bash
