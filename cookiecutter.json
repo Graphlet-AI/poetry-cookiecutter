@@ -1,8 +1,8 @@
 {
-    "project_name": "Graphlet Project",
+    "project_name": "graphlet-project",
     "project_slug": "graphlet",
     "author": "Russell Jurney",
-    "email": "russell.jurney@gmail.com",
+    "email": "rjurney@graphlet.ai",
     "github_organization": "Graphlet-AI",
     "project_description": "A Python / Poetry / Docker project",
     "blog_post_url": "https://blog.graphlet.ai"
