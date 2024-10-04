@@ -1,5 +1,6 @@
 {
-    "project_name": "graphlet-project",
+    "project_folder": "graphlet",
+    "project_name": "Graphlet AI Project",
     "project_slug": "graphlet",
     "author": "Russell Jurney",
     "email": "rjurney@graphlet.ai",
