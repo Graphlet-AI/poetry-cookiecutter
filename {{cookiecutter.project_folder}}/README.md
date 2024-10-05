@@ -1,4 +1,6 @@
-# Poetry Project
+# {{cookiecutter.project_name}}
+
+{{cookiecutter.project_description}}
 
 <center><img src="images/Graphlet-AI-Banner-with-Hypergraph-and-Womans-Head.jpg" /></center>
 
